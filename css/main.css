@@ -1,0 +1,59 @@
+#av-player {
+    position: relative;
+    z-index: -1;
+    width: 1158px;
+    height: 745px;
+    left: 60px;
+    display: block;
+}
+
+#playerButtons {
+    position: absolute;
+    bottom: 6.2vw;
+    z-index: 1;
+    width: 70vw;
+    height: 11vh;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(215, 201, 201);
+}
+
+.main #av-player.fullscreenMode {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 1080px;
+    z-index: 1;
+}
+
+.main #playerButtons.fullscreenMode {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    border-top: none;
+    z-index: 1;
+}
+
+.main {
+    padding: 0;
+}
+
+.moviesList {
+    border-right: 2px solid rgb(215, 201, 201);
+    padding: 10px 20px 10px 0;
+}
+
+.moviesList::before {
+    content: "Movies:";
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 47px;
+}
+
+.movie {
+    margin: 0 20px;
+}
